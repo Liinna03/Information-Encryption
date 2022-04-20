@@ -1,7 +1,7 @@
 import java.util.List;
 import inter.Encryption;
 
-public class InformationEncryption {
+public class FactoryPatternInformationEncryption {
     public static void main(String[] args) {
         List<String> type_encryption_text;
         OpenTxtMessage c= OpenTxtMessage.getInformation("src/main/java/information.txt");

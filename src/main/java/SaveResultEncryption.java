@@ -13,7 +13,7 @@ public class SaveResultEncryption {
     }
     public void saveResultTxt(){
         try {
-            String ruta = "result.txt";
+            String ruta = "src/main/java/result.txt";
             File file = new File(ruta);
             if (!file.exists()) {
                 file.createNewFile();
