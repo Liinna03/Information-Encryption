@@ -4,4 +4,4 @@ Programa para codificiar un mensaje ingresado en un archivo de texto, los tipos 
 
 ### Ejecución del proyecto. 
 
-Para ejecutar el programa la información debe ser ingresada en el archivo de texto con nombre El tipo de codificación debe ser 
+Para ejecutar el programa la el tipo de codificación y mensaje a codificar debe ser ingresado en el archivo de texto con nombre Information.txt, El tipo de codificación debe ser 
