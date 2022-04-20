@@ -1,26 +1,27 @@
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SaveResultEncryption {
-    private final String contenido;
-    private final List entrada;
+    private final String result;
+    private final List original_information;
 
-    public SaveResultEncryption(String contenido, List entrada) {
-        this.contenido = contenido;
-        this.entrada = entrada;
+    public SaveResultEncryption(String result, List original_information) {
+        this.result = result;
+        this.original_information = original_information;
     }
     public void saveResultTxt(){
         try {
-            String ruta = "src/main/java/result.txt";
+            String ruta = "result.txt";
             File file = new File(ruta);
             if (!file.exists()) {
                 file.createNewFile();
             }
             FileWriter fw = new FileWriter(file);
             BufferedWriter bw = new BufferedWriter(fw);
-            bw.write(  "información orginial:" + '\t' + entrada + '\n' + "Resultado codificación:" + '\t' + "contenido" );
+            bw.write(  "información original:" + '\t' + original_information + '\n' + "Resultado codificación:" + '\t' + result );
             bw.close();
         } catch (Exception e) {
             e.printStackTrace();

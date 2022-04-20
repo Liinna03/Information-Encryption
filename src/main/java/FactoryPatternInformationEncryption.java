@@ -4,7 +4,7 @@ import inter.Encryption;
 public class FactoryPatternInformationEncryption {
     public static void main(String[] args) {
         List<String> type_encryption_text;
-        OpenTxtMessage c= OpenTxtMessage.getInformation("src/main/java/information.txt");
+        OpenTxtMessage c= OpenTxtMessage.getInformation("information.txt");
         String information = c.scannerInformation();
         if (information != null){
             OrganizeInformation x = new OrganizeInformation(information);
