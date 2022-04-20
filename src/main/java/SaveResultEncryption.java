@@ -20,7 +20,7 @@ public class SaveResultEncryption {
             }
             FileWriter fw = new FileWriter(file);
             BufferedWriter bw = new BufferedWriter(fw);
-            bw.write(contenido + entrada);
+            bw.write(  "información orginial:" + '\t' + entrada + '\n' + "Resultado codificación:" + '\t' + "contenido" );
             bw.close();
         } catch (Exception e) {
             e.printStackTrace();
